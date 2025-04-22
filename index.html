@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>1 Mês com Você</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ff99cc;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 36px;
+      font-family: 'Great Vibes', cursive;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .love-message {
+      font-size: 20px;
+      color: #660033;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 20px;
+      color: #888;
+    }
+
+    .heart {
+      position: fixed;
+      top: -10px;
+      color: #ff3366;
+      font-size: 24px;
+      animation: fall 10s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Pop-up fofo */
+    #cartaPopup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 240, 245, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .carta {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 24px;
+      color: #cc0066;
+    }
+
+    .carta button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      background-color: #ff99cc;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Pop-up fofo antes do site abrir -->
+<div id="cartaPopup">
+  <div class="carta">
+    Oi minha princesa! Antes de entrar…  
+    <br><br>
+    Só queria te lembrar o quanto você é incrivel!!!.  
+    <br><br>
+    Vamos viver mais esse momento juntinhos?
+    <br>
+    <button onclick="document.getElementById('cartaPopup').style.display='none'">Sim, meu amor!</button>
+  </div>
+</div>
+
+<!-- Botão de música no topo -->
+<audio id="musica" loop>
+  <source src="melim-meu-abrigo.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('musica').play()" style="margin: 20px auto; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; border-radius: 30px; border: none; background-color: #1db954; color: white; font-size: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); cursor: pointer;">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Play" width="20" height="20">
+  Tocar nossa música
+</button>
+
+  <header>1 Mês com Você, Minha Princesa</header>
+
+  <div class="container">
+    <p class="love-message">Faz só um mês, mas parece que te conheço há muito mais tempo. Cada conversa, cada riso, cada momento ao seu lado tem sido leve, especial e verdadeiro. Você chegou de um jeito simples e fez tudo ficar melhor.</p>
+
+    <div class="gallery">
+      <img src="1.jpeg" alt="Foto linda">
+      <img src="2.jpeg" alt="Mais uma linda">
+      <img src="4.jpeg" alt="Perfeita">
+      <img src="5.jpeg" alt="Perfeita">
+      <img src="6.jpeg" alt="Foto linda">
+      <img src="7.jpeg" alt="Mais uma linda">
+      <img src="8.jpeg" alt="Perfeita">
+      <img src="9.jpeg" alt="Perfeita">
+      <img src="10.jpeg" alt="Foto linda">
+      <img src="11.jpeg" alt="Mais uma linda">
+      <img src="12.jpeg" alt="Perfeita">
+      <img src="13.jpeg" alt="Perfeita">
+      <img src="14.jpeg" alt="Foto linda">
+      <img src="15.jpeg" alt="Mais uma linda">
+      <img src="16.jpeg" alt="Perfeita">
+      <img src="17.jpeg" alt="Perfeita">
+      <img src="18.jpeg" alt="Foto linda">
+      <img src="19.jpeg" alt="Mais uma linda">
+      <img src="20.jpeg" alt="Perfeita">
+      <img src="21.jpeg" alt="Perfeita">
+      <img src="22.jpeg" alt="Foto linda">
+      <img src="23.jpeg" alt="Mais uma linda">
+      <img src="24.jpeg" alt="Perfeita">
+      <img src="25.jpeg" alt="Foto linda">
+      <img src="26.jpeg" alt="Mais uma linda">
+      <img src="27.jpeg" alt="Perfeita">
+    </div>
+
+    <p class="love-message">Cada momento ao seu lado é mágico e cada dia eu te amo mais ainda, você merece o mundo, você tem o esforço e a capacidade para realizar seus maiores sonhos, eu tenho muito orgulho de ter você comigo. Te amo muito meu amor!</p>
+  </div>
+
+  <footer>Feito com muito amor por Pedro Lucas</footer>
+
+  <!-- Corações animados -->
+  <script>
+    const hearts = ["❤️","💕","💖","💘"];
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 5 + 5) + "s";
+      heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }, 300);
+  </script>
+
+</body>
+</html>
